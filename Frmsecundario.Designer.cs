@@ -1,6 +1,6 @@
 ﻿namespace prylayunproyecto
 {
-    partial class Frmsecundario
+    partial class FrmSecundario
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             label3 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            comboBox1 = new ComboBox();
+            LST = new ComboBox();
             SuspendLayout();
             // 
             // button1
@@ -46,7 +46,7 @@
             button1.TabIndex = 0;
             button1.Text = "Aceptar";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += this.button1_Click;
+            
             // 
             // button2
             // 
@@ -101,20 +101,22 @@
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 6;
             // 
-            // comboBox1
+            // LST
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(175, 195);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(100, 23);
-            comboBox1.TabIndex = 7;
+            LST.AutoCompleteCustomSource.AddRange(new string[] { "-ADM", "-SIST", "-COM", "-VTA" });
+            LST.DropDownStyle = ComboBoxStyle.DropDownList;
+            LST.FormattingEnabled = true;
+            LST.Location = new Point(175, 195);
+            LST.Name = "LST";
+            LST.Size = new Size(100, 23);
+            LST.TabIndex = 7;
             // 
-            // Frmsecundario
+            // FrmSecundario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(486, 249);
-            Controls.Add(comboBox1);
+            ClientSize = new Size(486, 246);
+            Controls.Add(LST);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label3);
@@ -122,7 +124,7 @@
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Frmsecundario";
+            Name = "FrmSecundario";
             Text = "Login";
             ResumeLayout(false);
             PerformLayout();
@@ -137,6 +139,6 @@
         private Label label3;
         private TextBox textBox1;
         private TextBox textBox2;
-        private ComboBox comboBox1;
+        private ComboBox LST;
     }
 }

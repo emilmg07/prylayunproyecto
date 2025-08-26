@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace prylayunproyecto
 {
-    public partial class Frmsecundario : Form
+    public partial class FrmSecundario : Form
     {
-        public Frmsecundario()
+        public FrmSecundario()
         {
             InitializeComponent();
         }

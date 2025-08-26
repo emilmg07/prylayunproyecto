@@ -1,7 +1,7 @@
 ﻿
 namespace prylayunproyecto
 {
-    partial class frmprincipal
+    partial class FrmPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,10 +29,10 @@ namespace prylayunproyecto
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmprincipal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             lblBienvenidos = new Label();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            Pick1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)Pick1).BeginInit();
             SuspendLayout();
             // 
             // lblBienvenidos
@@ -44,29 +44,29 @@ namespace prylayunproyecto
             lblBienvenidos.Size = new Size(360, 75);
             lblBienvenidos.TabIndex = 0;
             lblBienvenidos.Text = "bienvenido !!!!";
-            lblBienvenidos.Click += this.label1_Click;
+            lblBienvenidos.Click += label1_Click;
             // 
-            // pictureBox1
+            // Pick1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(59, 122);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(660, 316);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += this.pictureBox1_Click;
+            Pick1.Image = (Image)resources.GetObject("Pick1.Image");
+            Pick1.Location = new Point(59, 122);
+            Pick1.Name = "Pick1";
+            Pick1.Size = new Size(660, 316);
+            Pick1.SizeMode = PictureBoxSizeMode.Zoom;
+            Pick1.TabIndex = 1;
+            Pick1.TabStop = false;
+            Pick1.Click += pictureBox1_Click;
             // 
-            // frmprincipal
+            // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox1);
+            Controls.Add(Pick1);
             Controls.Add(lblBienvenidos);
-            Name = "frmprincipal";
-            Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Name = "FrmPrincipal";
+            Text = "Bienvenido";
+            ((System.ComponentModel.ISupportInitialize)Pick1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -84,6 +84,6 @@ namespace prylayunproyecto
         #endregion
 
         private Label lblBienvenidos;
-        private PictureBox pictureBox1;
+        private PictureBox Pick1;
     }
 }

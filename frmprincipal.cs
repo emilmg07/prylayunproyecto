@@ -1,18 +1,10 @@
 ﻿namespace prylayunproyecto
 {
-    public partial class frmprincipal : Form
+    public partial class FrmPrincipal : Form
     {
-        public frmprincipal()
+        public FrmPrincipal()
         {
             InitializeComponent();
-            public partial class frmprincipal : Form
-        {
-            public frmprincipal()
-            {
-                InitializeComponent();
-
-            
-            }
-    }
+        }     
     }
 }
